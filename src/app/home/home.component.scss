@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:100,300,300i,400,400i,700,700i');
+
+$font-family: 'Lato', sans-serif;
+$text-color: #ffffff;
+
+.background-image {
+  width: 100%;
+  height: 100%;
+  background-image: url('../../assets/profile.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+}
+
+.tint {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.7);
+  position: absolute;
+  display: flex;
+  align-items: center;
+
+  & > div {
+    width: 60%;
+    font-family: $font-family;
+    color: $text-color;
+    display: flex;
+    flex-direction: column;
+
+    & > .name {
+      font-weight: 400;
+      text-transform: uppercase;
+      font-size: 50px;
+      letter-spacing: 4px;
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    & > .divider {
+      width: 100%;
+      height: 2px;
+      background-color: $text-color;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+
+    & > .position {
+      font-weight: 100;
+      font-size: 20px;
+      letter-spacing: 3px;
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    & > .social-media {
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+      margin-top: 30px;
+
+      & > .icon {
+        width: 40px;
+        height: 40px;
+        background-size: cover;
+        margin-left: 10px;
+        margin-right: 10px;
+
+        &#facebook {
+          background-image: url('../../assets/facebook.png');
+        }
+
+        &#instagram {
+          background-image: url('../../assets/instagram.png');
+        }
+
+        &#linkedin {
+          background-image: url('../../assets/linkedin.png');
+        }
+
+        &#github {
+          background-image: url('../../assets/github.png');
+        }
+      }
+    }
+  }
+}
