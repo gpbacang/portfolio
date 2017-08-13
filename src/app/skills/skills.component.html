@@ -18,52 +18,10 @@
   </div>
   <div>
     <label>Other Skills:</label>
-    <div>
-      <label>Angular 4</label>
+    <div *ngFor="let skill of skills">
+      <label>{{ skill.name }}</label>
       <div>
-        <div class="percentage"></div>
-      </div>
-    </div>
-    <div>
-      <label>Python</label>
-      <div>
-        <div class="percentage"></div>
-      </div>
-    </div>
-    <div>
-      <label>Git</label>
-      <div>
-        <div class="percentage"></div>
-      </div>
-    </div>
-    <div>
-      <label>C#</label>
-      <div>
-        <div class="percentage"></div>
-      </div>
-    </div>
-    <div>
-      <label>Choregraphe</label>
-      <div>
-        <div class="percentage"></div>
-      </div>
-    </div>
-    <div>
-      <label>Adobe Illustrator, Photoshop, <br>Experience Design</label>
-      <div>
-        <div class="percentage"></div>
-      </div>
-    </div>
-    <div>
-      <label>Firebase</label>
-      <div>
-        <div class="percentage"></div>
-      </div>
-    </div>
-    <div>
-      <label>Atom, Sublime, Visual Studio Code</label>
-      <div>
-        <div class="percentage"></div>
+        <div [ngStyle]="{'width': skill.percentage, 'background-color': skill.backgroundColor}"></div>
       </div>
     </div>
   </div>

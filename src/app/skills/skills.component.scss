@@ -80,59 +80,13 @@ $chart-bg: #000000;
         height: 15px;
         background-color: black;
         margin-top: 7px;
+
+        & > div {
+          height: 100%;
+        }
       }
     }
-
-    & > div:nth-child(2) > div > .percentage {
-      width: 75%;
-      height: 100%;
-      background-color: tomato;
-    }
-
-    & > div:nth-child(3) > div > .percentage {
-      width: 70%;
-      height: 100%;
-      background-color: #20b2aa;
-    }
-
-    & > div:nth-child(4) > div > .percentage {
-      width: 60%;
-      height: 100%;
-      background-color: #843284;
-    }
-
-    & > div:nth-child(5) > div > .percentage {
-      width: 40%;
-      height: 100%;
-      background-color: #ff1974;
-    }
-
-    & > div:nth-child(6) > div > .percentage {
-      width: 90%;
-      height: 100%;
-      background-color: #ffff01;
-    }
-
-    & > div:nth-child(7) > div > .percentage {
-      width: 65%;
-      height: 100%;
-      background-color: #ffb401;
-    }
-
-    & > div:nth-child(8) > div > .percentage {
-      width: 30%;
-      height: 100%;
-      background-color: #72160c;
-    }
-
-    & > div:nth-child(9) > div > .percentage {
-      width: 85%;
-      height: 100%;
-      background-color: #296469;
-    }
   }
-
-
 }
 
 .chart-container {
