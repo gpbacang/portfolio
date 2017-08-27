@@ -83,6 +83,7 @@ $chart-bg: #000000;
 
         & > div {
           height: 100%;
+          transition: all 1s;
         }
       }
     }

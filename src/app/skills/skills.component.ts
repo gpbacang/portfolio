@@ -65,7 +65,25 @@ export class SkillsComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    this.skills[0].percentage = "0%";
+    this.skills[1].percentage = "0%";
+    this.skills[2].percentage = "0%";
+    this.skills[3].percentage = "0%";
+    this.skills[4].percentage = "0%";
+    this.skills[5].percentage = "0%";
+    this.skills[6].percentage = "0%";
+    this.skills[7].percentage = "0%";
 
+    setTimeout(() => {
+      this.skills[0].percentage = "75%";
+      this.skills[1].percentage = "70%";
+      this.skills[2].percentage = "60%";
+      this.skills[3].percentage = "40%";
+      this.skills[4].percentage = "90%";
+      this.skills[5].percentage = "65%";
+      this.skills[6].percentage = "30%";
+      this.skills[7].percentage = "85%";
+    }, 100);
   }
 
 }
