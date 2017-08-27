@@ -6,8 +6,11 @@ import { SideMenuComponent } from './side-menu/side-menu.component';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { SkillsComponent } from './skills/skills.component';
+import { ContactComponent } from './contact/contact.component';
 
 import { ChartsModule } from 'ng2-charts';
+import { NguiMapModule } from '@ngui/map';
+
 
 @NgModule({
   declarations: [
@@ -15,11 +18,13 @@ import { ChartsModule } from 'ng2-charts';
     SideMenuComponent,
     HomeComponent,
     AboutComponent,
-    SkillsComponent
+    SkillsComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
-    ChartsModule
+    ChartsModule,
+    NguiMapModule.forRoot({apiUrl: 'https://maps.google.com/maps/api/js?key=AIzaSyBwL_Dj4L5WtUZ89_tjfK61E1dpwROj-nQ'})
   ],
   providers: [],
   bootstrap: [AppComponent]
